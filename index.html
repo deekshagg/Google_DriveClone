@@ -1,29 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
     <head>
-        <title>First Frontend Project</title>
-        <link rel="stylesheet" href="style.css" />
-      </head>
+        <title>My first hands on frontend</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <button id="btnAddFolder"><h1>Add Folder</h1></button>
-
-    <div id = "divBreadCrumb">
-        <a class="path">Root</a>
-    </div>
-
-    <div id = "divContainer"></div>
-
-    <template id = "pageTemplates">
-        <div class = "folder">
-            <span action = "edit">edit</span>
-            <span action = "delete">delete</span>
-            <div purpose = "name"></div>
+    <body>
+        <button id="btnAddFolder">Add Folder</button>
+        <div id="divBreadCrumb">
+            <a class="path" fid="-1">Root</a>
         </div>
-    </template>
+        <div id="divContainer"></div>
 
-    <script type = "text/javascript" src="main.js"></script>
-</body>
+        <template id="pageTemplates">
+            <div class="folder">
+                <span action="edit">edit</span>
+                <span action="delete">delete</span>
+                <span action="view">view</span>
+                <div purpose="name"></div>
+            </div>
+            <a class="path"></a>
+        </template>
 
+        <script type="text/javascript" src="main.js"></script>
+    </body>
 </html>
